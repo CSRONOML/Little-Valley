@@ -1,0 +1,10 @@
+/.vsconfig
+/.vs/
+/Build/
+/Library/
+/Logs/
+/obj/
+/Temp/
+/UIElementsSchema/
+/UserSettings/
+.DS_Store
