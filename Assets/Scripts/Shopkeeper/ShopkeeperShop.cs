@@ -45,13 +45,13 @@ public class ShopkeeperShop : MonoBehaviour {
 
     public void Sell() {
         SetBalance(balance + selectedItem.GetScriptableObject().price);
+        characterAnimator.ResetPlayerVariation(selectedItem.GetScriptableObject());
         selectedItem.purchased = false;
         UpdateButtons();
     }
 
     public void Equip() {
         characterAnimator.SetPlayerVariation(selectedItem.GetScriptableObject());
-        UpdateButtons();
     }
 
     public void SetSelectedItem(ShopkeeperItem selectedItem) {

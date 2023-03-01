@@ -24,6 +24,19 @@ public class CharacterAnimator : MonoBehaviour {
     [SerializeField] private PlayerVariationScriptableObject shoesVariation;
 
     private float animationTime;
+    private PlayerVariationScriptableObject defaultBodyVariation;
+    private PlayerVariationScriptableObject defaultHairVariation;
+    private PlayerVariationScriptableObject defaultPantsVariation;
+    private PlayerVariationScriptableObject defaultShirtVariation;
+    private PlayerVariationScriptableObject defaultShoesVariation;
+
+    private void Awake() {
+        defaultBodyVariation = bodyVariation;
+        defaultHairVariation = hairVariation;
+        defaultPantsVariation = pantsVariation;
+        defaultShirtVariation = shirtVariation;
+        defaultShoesVariation = shoesVariation;
+    }
 
     private void Update() {
         if (characterController2D.Stopping) {
@@ -66,6 +79,20 @@ public class CharacterAnimator : MonoBehaviour {
                 break;
             case PlayerVariationType.SHOES:
                 shoesVariation = variation;
+                break;
+        }
+    }
+
+    public void ResetPlayerVariation(PlayerVariationScriptableObject variation) {
+        switch (variation.type) {
+            case PlayerVariationType.PANTS:
+                if (pantsVariation == variation) pantsVariation = defaultPantsVariation;
+                break;
+            case PlayerVariationType.SHIRT:
+                if (shirtVariation == variation) shirtVariation = defaultShirtVariation;
+                break;
+            case PlayerVariationType.SHOES:
+                if (shoesVariation == variation) shoesVariation = defaultShoesVariation;
                 break;
         }
     }
