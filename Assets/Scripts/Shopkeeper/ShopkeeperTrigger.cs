@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class ShopkeeperTrigger : MonoBehaviour {
     
     [Header("Settings")]
-    [SerializeField] private float speed;
+    [SerializeField] private float animationSpeed;
     
     [Header("References")]
     [SerializeField] private Texture buttonUp;
@@ -22,15 +22,15 @@ public class ShopkeeperTrigger : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        StartCoroutine(buttonTransitionRoutiune(1));
+        StartCoroutine(ButtonTransitionRoutine(1));
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        StartCoroutine(buttonTransitionRoutiune(0));
+        StartCoroutine(ButtonTransitionRoutine(0));
     }
 
-    private IEnumerator buttonTransitionRoutiune(float target) {
-        for (var time = 1 - target; time != target; time = Mathf.MoveTowards(time, target, speed * Time.deltaTime)) {
+    private IEnumerator ButtonTransitionRoutine(float target) {
+        for (var time = 1 - target; time != target; time = Mathf.MoveTowards(time, target, animationSpeed * Time.deltaTime)) {
             shopkeeperOverlay.alpha = time;
             yield return null;
         }

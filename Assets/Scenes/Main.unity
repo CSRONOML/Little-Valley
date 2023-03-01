@@ -4287,7 +4287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d950416256e114069b3ffd2dceb93d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  animationSpeed: 8
   buttonUp: {fileID: 2800000, guid: fa346166ca5a74e8a82f92e6584e2e55, type: 3}
   buttonDown: {fileID: 2800000, guid: 07d084ae227454de4b7f63bf426ec9a2, type: 3}
   shopkeeperImage: {fileID: 1740446985}
