@@ -868,7 +868,7 @@ TextureImporter:
         width: 30
         height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -889,7 +889,7 @@ TextureImporter:
         width: 12
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -897,6 +897,27 @@ TextureImporter:
       bones: []
       spriteID: 8c8089211b7ec476483f3b81137e70ca
       internalID: -919175300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Interior_38
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 144
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb742d44ba8024a24be37d34b9f732a9
+      internalID: -137479929
       vertices: []
       indices: 
       edges: []
@@ -930,6 +951,7 @@ TextureImporter:
       Interior_14: 1159446788
       Interior_31: -1589015865
       Interior_21: 1341919412
+      Interior_38: -137479929
       Interior_9: -1369463581
       Interior_30: -1707591162
       Interior_13: 1987417991
