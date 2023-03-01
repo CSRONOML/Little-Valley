@@ -56,4 +56,18 @@ public class CharacterAnimator : MonoBehaviour {
         shoesRenderer.flipX = characterController2D.LastVelocityWasNegative;
     }
 
+    public void SetPlayerVariation(PlayerVariationScriptableObject variation) {
+        switch (variation.type) {
+            case PlayerVariationType.PANTS:
+                pantsVariation = variation;
+                break;
+            case PlayerVariationType.SHIRT:
+                shirtVariation = variation;
+                break;
+            case PlayerVariationType.SHOES:
+                shoesVariation = variation;
+                break;
+        }
+    }
+
 }

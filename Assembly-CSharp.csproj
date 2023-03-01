@@ -61,7 +61,6 @@
     <Compile Include="Assets/Scripts/Characters/CharacterAnimator.cs" />
     <Compile Include="Assets/Scripts/Shopkeeper/ShopkeeperTrigger.cs" />
     <Compile Include="Assets/Scripts/Shopkeeper/ShopkeeperShop.cs" />
-    <Compile Include="Assets/Scripts/Scriptable Objects/ShopkeeperItemScriptableObject.cs" />
     <Compile Include="Assets/Scripts/Shopkeeper/ShopkeeperItem.cs" />
   </ItemGroup>
   <ItemGroup>

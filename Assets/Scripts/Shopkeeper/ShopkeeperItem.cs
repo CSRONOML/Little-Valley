@@ -7,10 +7,9 @@ public class ShopkeeperItem : MonoBehaviour {
 
     [Header("Settings")]
     [SerializeField] public bool purchased;
-    [SerializeField] public bool equipped;
 
     [Header("References")]
-    [SerializeField] private ShopkeeperItemScriptableObject shopkeeperItem;
+    [SerializeField] private PlayerVariationScriptableObject playerVariation;
     [SerializeField] private RawImage image;
     [SerializeField] private TextMeshProUGUI text;
 
@@ -25,12 +24,12 @@ public class ShopkeeperItem : MonoBehaviour {
     #endif
 
     private void UpdateItemDetails() {
-        image.texture = shopkeeperItem.texture;
-        text.text = shopkeeperItem.name + "\n$" + shopkeeperItem.price;
+        image.texture = playerVariation.texture;
+        text.text = playerVariation.name + "\n$" + playerVariation.price;
     }
 
-    public ShopkeeperItemScriptableObject GetScriptableObject() {
-        return shopkeeperItem;
+    public PlayerVariationScriptableObject GetScriptableObject() {
+        return playerVariation;
     }
 
 }

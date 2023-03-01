@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8304d9cf0bab499ab695790eec23b32, type: 3}
   m_Name: Body
   m_EditorClassIdentifier: 
+  name: Body
+  price: 0
+  type: 0
   walkAnimation:
   - {fileID: -10231970, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
   - {fileID: -906382753, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
@@ -21,3 +24,4 @@ MonoBehaviour:
   - {fileID: 2034769401, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
   - {fileID: -275899891, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
   - {fileID: 1700724932, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
+  texture: {fileID: 0}

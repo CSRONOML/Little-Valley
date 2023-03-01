@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8304d9cf0bab499ab695790eec23b32, type: 3}
   m_Name: Hair
   m_EditorClassIdentifier: 
+  name: Hair
+  price: 0
   type: 1
   walkAnimation:
   - {fileID: -10231970, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
@@ -22,3 +24,4 @@ MonoBehaviour:
   - {fileID: 2034769401, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
   - {fileID: -275899891, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
   - {fileID: 1700724932, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
+  texture: {fileID: 0}

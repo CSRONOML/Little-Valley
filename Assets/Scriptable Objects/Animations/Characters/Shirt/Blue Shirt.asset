@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8304d9cf0bab499ab695790eec23b32, type: 3}
   m_Name: Blue Shirt
   m_EditorClassIdentifier: 
+  name: Blue Shirt
+  price: 30
   type: 3
   walkAnimation:
   - {fileID: -861590465, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
@@ -22,3 +24,4 @@ MonoBehaviour:
   - {fileID: -1884603184, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
   - {fileID: 2139808087, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
   - {fileID: 1211631017, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
+  texture: {fileID: 2800000, guid: 4dc5ae5fb80074f6ab123e8abc61f391, type: 3}

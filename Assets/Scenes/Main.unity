@@ -266,7 +266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 20bf5d478a885414c860299ce57cae14, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -339,9 +339,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Blue Pants
+  m_text: '
 
-    $20'
+    $0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef08e255d9c894de99a039a13e379521, type: 2}
   m_sharedMaterial: {fileID: -4051125295960978040, guid: ef08e255d9c894de99a039a13e379521, type: 2}
@@ -477,7 +477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: a1ee69edc0c0545069dfb66da4a7da09, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 7b691e1fc47b94fcda3558790413bad4, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: abd6622eb0e2741c78cd7ac7bcd696f3, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1334,8 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   purchased: 0
-  equipped: 0
-  shopkeeperItem: {fileID: 11400000, guid: 0c16eb9ddb44b43218c5a99711dfdbf1, type: 2}
+  playerVariation: {fileID: 11400000, guid: 4246dd525b0b946d4a8049125da66574, type: 2}
   image: {fileID: 1225031818}
   text: {fileID: 2084318586}
 --- !u!1 &506364843
@@ -2697,8 +2696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   purchased: 0
-  equipped: 0
-  shopkeeperItem: {fileID: 11400000, guid: ebb2e9e678014477dab276dd599c3ae1, type: 2}
+  playerVariation: {fileID: 11400000, guid: 911bbb4980f3f460d95a132963d64d49, type: 2}
   image: {fileID: 250414625}
   text: {fileID: 988470115}
 --- !u!1 &568636508
@@ -2829,6 +2827,7 @@ MonoBehaviour:
   sellButton: {fileID: 1261399588}
   equipButton: {fileID: 1292045048}
   selectedItem: {fileID: 1456230228}
+  characterAnimator: {fileID: 419338876}
   balance: 250
 --- !u!1 &602727485
 GameObject:
@@ -5128,8 +5127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   purchased: 0
-  equipped: 0
-  shopkeeperItem: {fileID: 11400000, guid: ce71548ddbc6f450e8d5c24205f30da2, type: 2}
+  playerVariation: {fileID: 11400000, guid: 73d5c119f68a54afc863b22dff70ce8a, type: 2}
   image: {fileID: 143060244}
   text: {fileID: 1943419028}
 --- !u!1 &948848788
@@ -5237,9 +5235,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Red Pants
+  m_text: '
 
-    $20'
+    $0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef08e255d9c894de99a039a13e379521, type: 2}
   m_sharedMaterial: {fileID: -4051125295960978040, guid: ef08e255d9c894de99a039a13e379521, type: 2}
@@ -5375,7 +5373,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 4dc5ae5fb80074f6ab123e8abc61f391, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -5448,9 +5446,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Black Shoes
+  m_text: '
 
-    $10'
+    $0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef08e255d9c894de99a039a13e379521, type: 2}
   m_sharedMaterial: {fileID: -4051125295960978040, guid: ef08e255d9c894de99a039a13e379521, type: 2}
@@ -5813,7 +5811,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 240b4fb05b16240d3bc2bac3ae8a5342, type: 3}
+  m_Texture: {fileID: 0}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -6495,8 +6493,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   purchased: 0
-  equipped: 0
-  shopkeeperItem: {fileID: 11400000, guid: 94926ae313f664149871f0389baadd89, type: 2}
+  playerVariation: {fileID: 11400000, guid: 1913190ddd46544f88dca651c349b6d0, type: 2}
   image: {fileID: 244931615}
   text: {fileID: 147579049}
 --- !u!1 &1456230223
@@ -6648,8 +6645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   purchased: 0
-  equipped: 0
-  shopkeeperItem: {fileID: 11400000, guid: 64a213e9793a2494b99cba65375e9e49, type: 2}
+  playerVariation: {fileID: 11400000, guid: 2cd53f86de99e426899db938b577a345, type: 2}
   image: {fileID: 304577060}
   text: {fileID: 1536237110}
 --- !u!1 &1482743798
@@ -6918,9 +6914,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Brown Shirt
+  m_text: '
 
-    $200'
+    $0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef08e255d9c894de99a039a13e379521, type: 2}
   m_sharedMaterial: {fileID: -4051125295960978040, guid: ef08e255d9c894de99a039a13e379521, type: 2}
@@ -7401,8 +7397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   purchased: 0
-  equipped: 0
-  shopkeeperItem: {fileID: 11400000, guid: ef39537ad1ee54145b396b336338fe64, type: 2}
+  playerVariation: {fileID: 11400000, guid: b107c644bd652477481c21ea0dcf42b8, type: 2}
   image: {fileID: 1284863236}
   text: {fileID: 1243306886}
 --- !u!1 &1759303185
@@ -7815,9 +7810,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'White Shoes
+  m_text: '
 
-    $10'
+    $0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef08e255d9c894de99a039a13e379521, type: 2}
   m_sharedMaterial: {fileID: -4051125295960978040, guid: ef08e255d9c894de99a039a13e379521, type: 2}
@@ -8223,9 +8218,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Blue Shirt
+  m_text: '
 
-    $30'
+    $0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef08e255d9c894de99a039a13e379521, type: 2}
   m_sharedMaterial: {fileID: -4051125295960978040, guid: ef08e255d9c894de99a039a13e379521, type: 2}

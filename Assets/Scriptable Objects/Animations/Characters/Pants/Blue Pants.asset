@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8304d9cf0bab499ab695790eec23b32, type: 3}
   m_Name: Blue Pants
   m_EditorClassIdentifier: 
+  name: Blue Pants
+  price: 20
   type: 2
   walkAnimation:
   - {fileID: -10231970, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
@@ -22,3 +24,4 @@ MonoBehaviour:
   - {fileID: 2034769401, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
   - {fileID: -275899891, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
   - {fileID: 1700724932, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  texture: {fileID: 2800000, guid: a1ee69edc0c0545069dfb66da4a7da09, type: 3}

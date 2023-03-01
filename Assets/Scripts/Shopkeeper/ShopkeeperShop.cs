@@ -11,6 +11,7 @@ public class ShopkeeperShop : MonoBehaviour {
     [SerializeField] private Button sellButton;
     [SerializeField] private Button equipButton;
     [SerializeField] private ShopkeeperItem selectedItem;
+    [SerializeField] private CharacterAnimator characterAnimator;
 
     [Header("Settings")]
     [SerializeField] private int balance;
@@ -33,7 +34,7 @@ public class ShopkeeperShop : MonoBehaviour {
     private void UpdateButtons() {
         buyButton.interactable = !selectedItem.purchased && balance >= selectedItem.GetScriptableObject().price;
         sellButton.interactable = selectedItem.purchased;
-        equipButton.interactable = selectedItem.purchased && !selectedItem.equipped;
+        equipButton.interactable = selectedItem.purchased;
     }
 
     public void Buy() {
@@ -45,12 +46,11 @@ public class ShopkeeperShop : MonoBehaviour {
     public void Sell() {
         SetBalance(balance + selectedItem.GetScriptableObject().price);
         selectedItem.purchased = false;
-        selectedItem.equipped = false;
         UpdateButtons();
     }
 
     public void Equip() {
-        selectedItem.equipped = true;
+        characterAnimator.SetPlayerVariation(selectedItem.GetScriptableObject());
         UpdateButtons();
     }
 
