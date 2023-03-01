@@ -17,11 +17,11 @@ public class CharacterAnimator : MonoBehaviour {
     [SerializeField] private SpriteRenderer shoesRenderer;
 
     [Header("Animations")]
-    [SerializeField] private BodyVariationScriptableObject bodyVariation;
-    [SerializeField] private HairVariationScriptableObject hairVariation;
-    [SerializeField] private PantsVariationScriptableObject pantsVariation;
-    [SerializeField] private ShirtVariationScriptableObject shirtVariation;
-    [SerializeField] private ShoesVariationScriptableObject shoesVariation;
+    [SerializeField] private PlayerVariationScriptableObject bodyVariation;
+    [SerializeField] private PlayerVariationScriptableObject hairVariation;
+    [SerializeField] private PlayerVariationScriptableObject pantsVariation;
+    [SerializeField] private PlayerVariationScriptableObject shirtVariation;
+    [SerializeField] private PlayerVariationScriptableObject shoesVariation;
 
     private float animationTime;
 

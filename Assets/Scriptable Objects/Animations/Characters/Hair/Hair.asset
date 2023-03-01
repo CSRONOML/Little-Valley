@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3a8742e5d92a464c9301c85f836ed68, type: 3}
+  m_Script: {fileID: 11500000, guid: f8304d9cf0bab499ab695790eec23b32, type: 3}
   m_Name: Hair
   m_EditorClassIdentifier: 
+  type: 1
   walkAnimation:
   - {fileID: -10231970, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
   - {fileID: -906382753, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}

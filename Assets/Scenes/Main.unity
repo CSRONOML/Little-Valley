@@ -1181,10 +1181,10 @@ MonoBehaviour:
   pantsRenderer: {fileID: 1759303187}
   shoesRenderer: {fileID: 1548253411}
   bodyVariation: {fileID: 11400000, guid: ddf46874e1b4241ffbe752d82cddac3e, type: 2}
-  hairVariation: {fileID: 11400000, guid: 531a5f0a9a5ce47e2b5c3f8a10bc537f, type: 2}
-  pantsVariation: {fileID: 11400000, guid: 2870ea92c0da047d4967a7ccb6609f69, type: 2}
-  shirtVariation: {fileID: 11400000, guid: f2ea8fe50dcef4532b6e86eaa52967eb, type: 2}
-  shoesVariation: {fileID: 11400000, guid: 4f5acf6f38bc445bca28e132264dc907, type: 2}
+  hairVariation: {fileID: 11400000, guid: cdba75cc7a628490c87b06413b584e03, type: 2}
+  pantsVariation: {fileID: 11400000, guid: 1913190ddd46544f88dca651c349b6d0, type: 2}
+  shirtVariation: {fileID: 11400000, guid: 7791b3952add74edbaa1f68dc527f777, type: 2}
+  shoesVariation: {fileID: 11400000, guid: b107c644bd652477481c21ea0dcf42b8, type: 2}
 --- !u!1 &467024166
 GameObject:
   m_ObjectHideFlags: 0

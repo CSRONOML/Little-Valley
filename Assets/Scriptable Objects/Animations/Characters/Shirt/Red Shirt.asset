@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eb3b048266a347849828bddf822a030, type: 3}
+  m_Script: {fileID: 11500000, guid: f8304d9cf0bab499ab695790eec23b32, type: 3}
   m_Name: Red Shirt
   m_EditorClassIdentifier: 
+  type: 3
   walkAnimation:
   - {fileID: -10231970, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
   - {fileID: -906382753, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}

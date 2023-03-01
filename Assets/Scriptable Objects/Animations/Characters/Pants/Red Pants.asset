@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8304d9cf0bab499ab695790eec23b32, type: 3}
+  m_Name: Red Pants
+  m_EditorClassIdentifier: 
+  type: 2
+  walkAnimation:
+  - {fileID: -1226208125, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: -745949674, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: -1327752578, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: 416291563, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: 15807828, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: 1353061608, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: -1876167137, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: 355637846, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
