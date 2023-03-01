@@ -50,3 +50,6 @@ TagManager:
   - name: Player
     uniqueID: 1738756633
     locked: 0
+  - name: Clothes
+    uniqueID: 4098197073
+    locked: 0
