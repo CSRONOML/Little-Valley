@@ -56,14 +56,17 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/Scriptable Objects/ShirtVariation.cs" />
+    <Compile Include="Assets/Scripts/Scriptable Objects/ShirtVariationScriptableObject.cs" />
     <Compile Include="Assets/Scripts/Characters/CharacterController2D.cs" />
-    <Compile Include="Assets/Scripts/Scriptable Objects/BodyVariation.cs" />
-    <Compile Include="Assets/Scripts/Scriptable Objects/HairVariation.cs" />
+    <Compile Include="Assets/Scripts/Scriptable Objects/BodyVariationScriptableObject.cs" />
+    <Compile Include="Assets/Scripts/Scriptable Objects/HairVariationScriptableObject.cs" />
     <Compile Include="Assets/Scripts/Characters/CharacterAnimator.cs" />
-    <Compile Include="Assets/Scripts/Scriptable Objects/ShoesVariation.cs" />
-    <Compile Include="Assets/Scripts/Scriptable Objects/PantsVariation.cs" />
+    <Compile Include="Assets/Scripts/Scriptable Objects/ShoesVariationScriptableObject.cs" />
+    <Compile Include="Assets/Scripts/Scriptable Objects/PantsVariationScriptableObject.cs" />
     <Compile Include="Assets/Scripts/Shopkeeper/ShopkeeperTrigger.cs" />
+    <Compile Include="Assets/Scripts/Shopkeeper/ShopkeeperShop.cs" />
+    <Compile Include="Assets/Scripts/Scriptable Objects/ShopkeeperItemScriptableObject.cs" />
+    <Compile Include="Assets/Scripts/Shopkeeper/ShopkeeperItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

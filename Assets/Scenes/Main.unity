@@ -551,7 +551,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 17d32c9f0fa9c42969178cee39887bca, type: 3}
+  m_Texture: {fileID: 2800000, guid: 7b691e1fc47b94fcda3558790413bad4, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -1197,6 +1197,7 @@ GameObject:
   - component: {fileID: 467024169}
   - component: {fileID: 467024168}
   - component: {fileID: 467024170}
+  - component: {fileID: 467024171}
   m_Layer: 5
   m_Name: Element
   m_TagString: Untagged
@@ -1279,7 +1280,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1302,12 +1303,29 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 467024168}
   toggleTransition: 0
-  graphic: {fileID: 0}
+  graphic: {fileID: 467024168}
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &467024171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467024166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopkeeperItem: {fileID: 11400000, guid: 0c16eb9ddb44b43218c5a99711dfdbf1, type: 2}
+  image: {fileID: 1225031818}
+  text: {fileID: 2084318586}
+  purchased: 0
+  equipped: 0
 --- !u!1 &506364843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2530,6 +2548,7 @@ GameObject:
   - component: {fileID: 555420860}
   - component: {fileID: 555420859}
   - component: {fileID: 555420861}
+  - component: {fileID: 555420862}
   m_Layer: 5
   m_Name: Element
   m_TagString: Untagged
@@ -2612,7 +2631,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2635,12 +2654,29 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 555420859}
   toggleTransition: 0
-  graphic: {fileID: 0}
+  graphic: {fileID: 555420859}
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &555420862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555420857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopkeeperItem: {fileID: 11400000, guid: ebb2e9e678014477dab276dd599c3ae1, type: 2}
+  image: {fileID: 250414625}
+  text: {fileID: 988470115}
+  purchased: 0
+  equipped: 0
 --- !u!1 &568636508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2723,6 +2759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 602309721}
+  - component: {fileID: 602309722}
   m_Layer: 3
   m_Name: Shopkeeper
   m_TagString: Player
@@ -2751,6 +2788,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &602309722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602309716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260f9e46d54a842b0b7e0df533751e73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 1456230228}
+  - {fileID: 1751209846}
+  - {fileID: 1424942322}
+  - {fileID: 555420862}
+  - {fileID: 467024171}
+  - {fileID: 908321331}
 --- !u!1 &602727485
 GameObject:
   m_ObjectHideFlags: 0
@@ -4912,6 +4968,7 @@ GameObject:
   - component: {fileID: 908321329}
   - component: {fileID: 908321328}
   - component: {fileID: 908321330}
+  - component: {fileID: 908321331}
   m_Layer: 5
   m_Name: Element
   m_TagString: Untagged
@@ -4994,7 +5051,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -5017,12 +5074,29 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 908321328}
   toggleTransition: 0
-  graphic: {fileID: 0}
+  graphic: {fileID: 908321328}
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &908321331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908321326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopkeeperItem: {fileID: 11400000, guid: ce71548ddbc6f450e8d5c24205f30da2, type: 2}
+  image: {fileID: 143060244}
+  text: {fileID: 1943419028}
+  purchased: 0
+  equipped: 0
 --- !u!1 &948848788
 GameObject:
   m_ObjectHideFlags: 0
@@ -6249,6 +6323,7 @@ GameObject:
   - component: {fileID: 1424942320}
   - component: {fileID: 1424942319}
   - component: {fileID: 1424942321}
+  - component: {fileID: 1424942322}
   m_Layer: 5
   m_Name: Element
   m_TagString: Untagged
@@ -6331,7 +6406,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -6354,12 +6429,29 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1424942319}
   toggleTransition: 0
-  graphic: {fileID: 0}
+  graphic: {fileID: 1424942319}
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &1424942322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424942317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopkeeperItem: {fileID: 11400000, guid: 94926ae313f664149871f0389baadd89, type: 2}
+  image: {fileID: 244931615}
+  text: {fileID: 147579049}
+  purchased: 0
+  equipped: 0
 --- !u!1 &1456230223
 GameObject:
   m_ObjectHideFlags: 0
@@ -6372,6 +6464,7 @@ GameObject:
   - component: {fileID: 1456230226}
   - component: {fileID: 1456230225}
   - component: {fileID: 1456230227}
+  - component: {fileID: 1456230228}
   m_Layer: 5
   m_Name: Element
   m_TagString: Untagged
@@ -6454,7 +6547,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -6477,12 +6570,29 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1456230225}
   toggleTransition: 0
-  graphic: {fileID: 0}
+  graphic: {fileID: 1456230225}
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 1
+--- !u!114 &1456230228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456230223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopkeeperItem: {fileID: 11400000, guid: 64a213e9793a2494b99cba65375e9e49, type: 2}
+  image: {fileID: 304577060}
+  text: {fileID: 1536237110}
+  purchased: 0
+  equipped: 0
 --- !u!1 &1482743798
 GameObject:
   m_ObjectHideFlags: 0
@@ -6751,7 +6861,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Brown Shirt
 
-    $30'
+    $200'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ef08e255d9c894de99a039a13e379521, type: 2}
   m_sharedMaterial: {fileID: -4051125295960978040, guid: ef08e255d9c894de99a039a13e379521, type: 2}
@@ -7095,6 +7205,7 @@ GameObject:
   - component: {fileID: 1751209844}
   - component: {fileID: 1751209843}
   - component: {fileID: 1751209845}
+  - component: {fileID: 1751209846}
   m_Layer: 5
   m_Name: Element
   m_TagString: Untagged
@@ -7177,7 +7288,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
@@ -7200,12 +7311,29 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 1751209843}
   toggleTransition: 0
-  graphic: {fileID: 0}
+  graphic: {fileID: 1751209843}
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
       m_Calls: []
   m_IsOn: 0
+--- !u!114 &1751209846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751209841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopkeeperItem: {fileID: 11400000, guid: ef39537ad1ee54145b396b336338fe64, type: 2}
+  image: {fileID: 1284863236}
+  text: {fileID: 1243306886}
+  purchased: 0
+  equipped: 0
 --- !u!1 &1759303185
 GameObject:
   m_ObjectHideFlags: 0
