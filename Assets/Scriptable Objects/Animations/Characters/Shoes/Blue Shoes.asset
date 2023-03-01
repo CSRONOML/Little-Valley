@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Blue Shoes
   m_EditorClassIdentifier: 
   walkAnimation:
-  - {fileID: 126078237, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 591414252, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 407861028, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -1863113461, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -2001403671, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -1611025266, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 1861678078, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 1573028997, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -10231970, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -906382753, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -1261509892, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -1572155634, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: 601379086, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: 2034769401, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -275899891, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: 1700724932, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}

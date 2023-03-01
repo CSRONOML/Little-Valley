@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Hair
   m_EditorClassIdentifier: 
   walkAnimation:
-  - {fileID: -861590465, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -311510624, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -1526506770, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 440873222, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -195468879, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -1884603184, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 2139808087, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 1211631017, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -10231970, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
+  - {fileID: -906382753, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
+  - {fileID: -1261509892, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
+  - {fileID: -1572155634, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
+  - {fileID: 601379086, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
+  - {fileID: 2034769401, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
+  - {fileID: -275899891, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}
+  - {fileID: 1700724932, guid: 2b3f09d23a3da4067a1dd53e8739576f, type: 3}

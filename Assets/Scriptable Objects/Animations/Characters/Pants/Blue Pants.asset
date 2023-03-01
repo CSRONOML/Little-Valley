@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Blue Pants
   m_EditorClassIdentifier: 
   walkAnimation:
-  - {fileID: 376902341, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 1449760678, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 1693270278, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -1129715486, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -261890075, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -719083894, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -1000297315, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -744708057, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -10231970, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: -906382753, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: -1261509892, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: -1572155634, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: 601379086, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: 2034769401, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: -275899891, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}
+  - {fileID: 1700724932, guid: 980e2442123854e17a2c25e0194d8abe, type: 3}

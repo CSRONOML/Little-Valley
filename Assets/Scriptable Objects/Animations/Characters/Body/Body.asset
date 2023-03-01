@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Body
   m_EditorClassIdentifier: 
   walkAnimation:
-  - {fileID: -10231970, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -906382753, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -1261509892, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -1572155634, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 601379086, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 2034769401, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -275899891, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 1700724932, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -10231970, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
+  - {fileID: -906382753, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
+  - {fileID: -1261509892, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
+  - {fileID: -1572155634, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
+  - {fileID: 601379086, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
+  - {fileID: 2034769401, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
+  - {fileID: -275899891, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}
+  - {fileID: 1700724932, guid: c0ab21e4e9af1481d8b4767babae2d59, type: 3}

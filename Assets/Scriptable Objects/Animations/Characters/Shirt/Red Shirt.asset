@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Red Shirt
   m_EditorClassIdentifier: 
   walkAnimation:
-  - {fileID: 286916384, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -269835933, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -271815773, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 1976849857, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -295116418, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: 1583725963, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -1984264549, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
-  - {fileID: -676175576, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -10231970, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
+  - {fileID: -906382753, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
+  - {fileID: -1261509892, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
+  - {fileID: -1572155634, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
+  - {fileID: 601379086, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
+  - {fileID: 2034769401, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
+  - {fileID: -275899891, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
+  - {fileID: 1700724932, guid: 6a7fb94859cf943fabb30ac3519a379f, type: 3}
