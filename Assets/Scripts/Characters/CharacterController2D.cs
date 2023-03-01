@@ -8,6 +8,7 @@ public class CharacterController2D : MonoBehaviour {
     [SerializeField] private float damp;
     
     [Header("References")]
+    [SerializeField] private ShopkeeperTrigger shopkeeperTrigger;
     [SerializeField] private new Rigidbody2D rigidbody2D;
     
     public Vector2 Velocity { private set; get; }
@@ -18,6 +19,11 @@ public class CharacterController2D : MonoBehaviour {
 
     private void FixedUpdate() {
         var target = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+
+        if (shopkeeperTrigger.IsShopping) {
+            target = Vector2.zero;
+        }
+
         Velocity = Vector2.SmoothDamp(Velocity, target, ref Acceleration, damp);
         Stopping = target.magnitude == 0;
 

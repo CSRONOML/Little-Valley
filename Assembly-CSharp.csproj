@@ -64,7 +64,6 @@
     <Compile Include="Assets/Scripts/Scriptable Objects/ShoesVariation.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/PantsVariation.cs" />
     <Compile Include="Assets/Scripts/Shopkeeper/ShopkeeperTrigger.cs" />
-    <Compile Include="Assets/Scripts/Gameplay/InventoryManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

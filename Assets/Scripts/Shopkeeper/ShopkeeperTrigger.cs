@@ -10,32 +10,43 @@ public class ShopkeeperTrigger : MonoBehaviour {
     [Header("References")]
     [SerializeField] private Texture buttonUp;
     [SerializeField] private Texture buttonDown;
-    [SerializeField] private RawImage shopkeeperImage;
-    [SerializeField] private CanvasGroup shopkeeperOverlay;
+    [SerializeField] private RawImage hintImage;
+    [SerializeField] private CanvasGroup hintOverlay;
+    [SerializeField] private CanvasGroup shopOverlay;
+
+    public bool IsShopping { private set; get; }
 
     private void Update() {
         if (Input.GetKey(KeyCode.E)) {
-            shopkeeperImage.texture = buttonDown;
+            hintImage.texture = buttonDown;
         } else {
-            shopkeeperImage.texture = buttonUp;
+            hintImage.texture = buttonUp;
+        }
+
+        if (Input.GetKeyUp(KeyCode.E)) {
+            if (shopOverlay.alpha == 0) {
+                StartCoroutine(TransitionRoutine(shopOverlay, 1));
+            } else if (shopOverlay.alpha == 1) {
+                StartCoroutine(TransitionRoutine(shopOverlay, 0));
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        StartCoroutine(ButtonTransitionRoutine(1));
+        StartCoroutine(TransitionRoutine(hintOverlay, 1));
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        StartCoroutine(ButtonTransitionRoutine(0));
+        StartCoroutine(TransitionRoutine(hintOverlay, 0));
     }
 
-    private IEnumerator ButtonTransitionRoutine(float target) {
+    private IEnumerator TransitionRoutine(CanvasGroup canvasGroup, float target) {
         for (var time = 1 - target; time != target; time = Mathf.MoveTowards(time, target, animationSpeed * Time.deltaTime)) {
-            shopkeeperOverlay.alpha = time;
+            canvasGroup.alpha = time;
             yield return null;
         }
 
-        shopkeeperOverlay.alpha = target;
+        canvasGroup.alpha = target;
     }
 
 }
