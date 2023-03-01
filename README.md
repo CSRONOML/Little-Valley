@@ -1,3 +1,3 @@
-﻿# Geo-Distances
+﻿# Little Valley
 ## Screenshot
 ![Screenshot](Screenshot.png)
