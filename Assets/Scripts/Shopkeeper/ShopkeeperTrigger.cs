@@ -10,6 +10,7 @@ public class ShopkeeperTrigger : MonoBehaviour {
     [Header("References")]
     [SerializeField] private Texture buttonUp;
     [SerializeField] private Texture buttonDown;
+    [SerializeField] private SpriteRenderer[] shopkeeperSpriteRenderers;
     [SerializeField] private RawImage hintImage;
     [SerializeField] private CanvasGroup hintOverlay;
     [SerializeField] private CanvasGroup shopOverlay;
@@ -23,7 +24,7 @@ public class ShopkeeperTrigger : MonoBehaviour {
             hintImage.texture = buttonUp;
         }
 
-        if (Input.GetKeyUp(KeyCode.E)) {
+        if (Input.GetKeyUp(KeyCode.E) && hintOverlay.alpha == 1) {
             if (shopOverlay.alpha == 0) {
                 StartCoroutine(TransitionRoutine(shopOverlay, 1));
                 IsShopping = true;
@@ -36,6 +37,14 @@ public class ShopkeeperTrigger : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) {
         StartCoroutine(TransitionRoutine(hintOverlay, 1));
+    }
+
+    private void OnTriggerStay2D(Collider2D collision) {
+        var flipShopkeeper = transform.position.x > collision.transform.position.x;
+
+        foreach (var shopkeeperSpriteRenderer in shopkeeperSpriteRenderers) {
+            shopkeeperSpriteRenderer.flipX = flipShopkeeper;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
