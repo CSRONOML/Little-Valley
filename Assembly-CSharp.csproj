@@ -63,6 +63,7 @@
     <Compile Include="Assets/Scripts/Characters/CharacterAnimator.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/ShoesVariation.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/PantsVariation.cs" />
+    <Compile Include="Assets/Scripts/Shopkeeper/ShopkeeperTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
