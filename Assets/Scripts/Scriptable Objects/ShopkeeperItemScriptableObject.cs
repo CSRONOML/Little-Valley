@@ -3,8 +3,11 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Data", menuName = "Scriptable Objects/Shopkeeper/Item")]
 public class ShopkeeperItemScriptableObject : ScriptableObject {
     
-    [SerializeField] public Texture2D texture;
+    [Header("Settings")]
     [SerializeField] public new string name;
     [SerializeField] public int price;
+
+    [Header("References")]
+    [SerializeField] public Texture2D texture;
 
 }

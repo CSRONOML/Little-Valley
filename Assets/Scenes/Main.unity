@@ -1307,7 +1307,19 @@ MonoBehaviour:
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602309722}
+        m_TargetAssemblyTypeName: ShopkeeperShop, Assembly-CSharp
+        m_MethodName: SetSelectedItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 467024171}
+          m_ObjectArgumentAssemblyTypeName: ShopkeeperItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!114 &467024171
 MonoBehaviour:
@@ -1321,11 +1333,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  purchased: 0
+  equipped: 0
   shopkeeperItem: {fileID: 11400000, guid: 0c16eb9ddb44b43218c5a99711dfdbf1, type: 2}
   image: {fileID: 1225031818}
   text: {fileID: 2084318586}
-  purchased: 0
-  equipped: 0
 --- !u!1 &506364843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2658,7 +2670,19 @@ MonoBehaviour:
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602309722}
+        m_TargetAssemblyTypeName: ShopkeeperShop, Assembly-CSharp
+        m_MethodName: SetSelectedItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 555420862}
+          m_ObjectArgumentAssemblyTypeName: ShopkeeperItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!114 &555420862
 MonoBehaviour:
@@ -2672,11 +2696,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  purchased: 0
+  equipped: 0
   shopkeeperItem: {fileID: 11400000, guid: ebb2e9e678014477dab276dd599c3ae1, type: 2}
   image: {fileID: 250414625}
   text: {fileID: 988470115}
-  purchased: 0
-  equipped: 0
 --- !u!1 &568636508
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,13 +2824,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 260f9e46d54a842b0b7e0df533751e73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  items:
-  - {fileID: 1456230228}
-  - {fileID: 1751209846}
-  - {fileID: 1424942322}
-  - {fileID: 555420862}
-  - {fileID: 467024171}
-  - {fileID: 908321331}
+  text: {fileID: 602727487}
+  buyButton: {fileID: 2145925964}
+  sellButton: {fileID: 1261399588}
+  equipButton: {fileID: 1292045048}
+  selectedItem: {fileID: 1456230228}
+  balance: 250
 --- !u!1 &602727485
 GameObject:
   m_ObjectHideFlags: 0
@@ -2819,7 +2842,7 @@ GameObject:
   - component: {fileID: 602727488}
   - component: {fileID: 602727487}
   m_Layer: 5
-  m_Name: Cash Text
+  m_Name: Balance Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5078,7 +5101,19 @@ MonoBehaviour:
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602309722}
+        m_TargetAssemblyTypeName: ShopkeeperShop, Assembly-CSharp
+        m_MethodName: SetSelectedItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 908321331}
+          m_ObjectArgumentAssemblyTypeName: ShopkeeperItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!114 &908321331
 MonoBehaviour:
@@ -5092,11 +5127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  purchased: 0
+  equipped: 0
   shopkeeperItem: {fileID: 11400000, guid: ce71548ddbc6f450e8d5c24205f30da2, type: 2}
   image: {fileID: 143060244}
   text: {fileID: 1943419028}
-  purchased: 0
-  equipped: 0
 --- !u!1 &948848788
 GameObject:
   m_ObjectHideFlags: 0
@@ -5524,8 +5559,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1388514993}
-  - {fileID: 1261399587}
   - {fileID: 2145925963}
+  - {fileID: 1261399587}
   - {fileID: 1292045047}
   m_Father: {fileID: 2078101239}
   m_RootOrder: 1
@@ -5618,7 +5653,7 @@ RectTransform:
   m_Children:
   - {fileID: 506364844}
   m_Father: {fileID: 1247470368}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -5669,13 +5704,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 602309722}
+        m_TargetAssemblyTypeName: ShopkeeperShop, Assembly-CSharp
+        m_MethodName: Sell
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5877,13 +5912,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 602309722}
+        m_TargetAssemblyTypeName: ShopkeeperShop, Assembly-CSharp
+        m_MethodName: Equip
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6433,7 +6468,19 @@ MonoBehaviour:
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602309722}
+        m_TargetAssemblyTypeName: ShopkeeperShop, Assembly-CSharp
+        m_MethodName: SetSelectedItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1424942322}
+          m_ObjectArgumentAssemblyTypeName: ShopkeeperItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!114 &1424942322
 MonoBehaviour:
@@ -6447,11 +6494,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  purchased: 0
+  equipped: 0
   shopkeeperItem: {fileID: 11400000, guid: 94926ae313f664149871f0389baadd89, type: 2}
   image: {fileID: 244931615}
   text: {fileID: 147579049}
-  purchased: 0
-  equipped: 0
 --- !u!1 &1456230223
 GameObject:
   m_ObjectHideFlags: 0
@@ -6574,7 +6621,19 @@ MonoBehaviour:
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602309722}
+        m_TargetAssemblyTypeName: ShopkeeperShop, Assembly-CSharp
+        m_MethodName: SetSelectedItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1456230228}
+          m_ObjectArgumentAssemblyTypeName: ShopkeeperItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 1
 --- !u!114 &1456230228
 MonoBehaviour:
@@ -6588,11 +6647,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  purchased: 0
+  equipped: 0
   shopkeeperItem: {fileID: 11400000, guid: 64a213e9793a2494b99cba65375e9e49, type: 2}
   image: {fileID: 304577060}
   text: {fileID: 1536237110}
-  purchased: 0
-  equipped: 0
 --- !u!1 &1482743798
 GameObject:
   m_ObjectHideFlags: 0
@@ -7315,7 +7374,19 @@ MonoBehaviour:
   m_Group: {fileID: 1388514995}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 602309722}
+        m_TargetAssemblyTypeName: ShopkeeperShop, Assembly-CSharp
+        m_MethodName: SetSelectedItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1751209846}
+          m_ObjectArgumentAssemblyTypeName: ShopkeeperItem, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!114 &1751209846
 MonoBehaviour:
@@ -7329,11 +7400,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 365692720cc4f476b9b27ebaeb32374e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  purchased: 0
+  equipped: 0
   shopkeeperItem: {fileID: 11400000, guid: ef39537ad1ee54145b396b336338fe64, type: 2}
   image: {fileID: 1284863236}
   text: {fileID: 1243306886}
-  purchased: 0
-  equipped: 0
 --- !u!1 &1759303185
 GameObject:
   m_ObjectHideFlags: 0
@@ -8264,7 +8335,7 @@ RectTransform:
   m_Children:
   - {fileID: 1819842683}
   m_Father: {fileID: 1247470368}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8315,13 +8386,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 602309722}
+        m_TargetAssemblyTypeName: ShopkeeperShop, Assembly-CSharp
+        m_MethodName: Buy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
