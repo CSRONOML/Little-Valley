@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22d4dec16ef15451b82dca95a737a54d, type: 3}
+  m_Name: Blue Shoes
+  m_EditorClassIdentifier: 
+  walkAnimation:
+  - {fileID: 126078237, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: 591414252, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: 407861028, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -1863113461, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -2001403671, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: -1611025266, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: 1861678078, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}
+  - {fileID: 1573028997, guid: a8f51e4b8c4cd4b65afe515641abd2a4, type: 3}

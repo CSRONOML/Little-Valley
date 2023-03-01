@@ -646,6 +646,7 @@ GameObject:
   - component: {fileID: 419338875}
   - component: {fileID: 419338873}
   - component: {fileID: 419338874}
+  - component: {fileID: 419338876}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -668,8 +669,8 @@ Transform:
   - {fileID: 519420032}
   - {fileID: 531997715}
   - {fileID: 10836888}
-  - {fileID: 1598525537}
   - {fileID: 1759303186}
+  - {fileID: 1598525537}
   - {fileID: 1548253410}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -707,9 +708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdafd9068b5f7431aa4d7ffa64a086f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidbody2D: {fileID: 419338873}
   speed: 4.5
   damp: 0.03125
+  rigidbody2D: {fileID: 419338873}
 --- !u!70 &419338875
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -726,6 +727,31 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: -0.5}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
+--- !u!114 &419338876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419338871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdf17d78c2b5d487d9e6a832497b251a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  characterController2D: {fileID: 419338874}
+  spritesTransform: {fileID: 0}
+  bodyRenderer: {fileID: 531997716}
+  hairRenderer: {fileID: 10836889}
+  shirtRenderer: {fileID: 1598525538}
+  pantsRenderer: {fileID: 1759303187}
+  shoesRenderer: {fileID: 1548253411}
+  bodyVariation: {fileID: 11400000, guid: ddf46874e1b4241ffbe752d82cddac3e, type: 2}
+  hairVariation: {fileID: 11400000, guid: 531a5f0a9a5ce47e2b5c3f8a10bc537f, type: 2}
+  pantsVariation: {fileID: 11400000, guid: 2870ea92c0da047d4967a7ccb6609f69, type: 2}
+  shirtVariation: {fileID: 11400000, guid: f2ea8fe50dcef4532b6e86eaa52967eb, type: 2}
+  shoesVariation: {fileID: 11400000, guid: 4f5acf6f38bc445bca28e132264dc907, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3908,7 +3934,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 419338872}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1598525538
 SpriteRenderer:
@@ -3992,7 +4018,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 419338872}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1759303187
 SpriteRenderer:
