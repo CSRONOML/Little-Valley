@@ -1,3 +1,4 @@
+using Mono.Cecil.Cil;
 using UnityEngine;
 
 public class CharacterAnimator : MonoBehaviour {
@@ -25,7 +26,16 @@ public class CharacterAnimator : MonoBehaviour {
     private float animationTime;
 
     private void Update() {
-        animationTime = (animationTime + characterController2D.Velocity.magnitude * speed * Time.deltaTime) % bodyVariation.walkAnimation.Length;
+        if (characterController2D.Stopping) {
+            animationTime = 0;
+        } else {
+            animationTime += speed * Time.deltaTime;
+        }
+
+        if (animationTime > bodyVariation.walkAnimation.Length) {
+            animationTime -= bodyVariation.walkAnimation.Length;
+        }
+
         SetAnimationsIndex((int) animationTime);
         UpdateSpritesDirection();
     }
