@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShopkeeperTrigger : MonoBehaviour {
     
@@ -7,7 +8,18 @@ public class ShopkeeperTrigger : MonoBehaviour {
     [SerializeField] private float speed;
     
     [Header("References")]
+    [SerializeField] private Texture buttonUp;
+    [SerializeField] private Texture buttonDown;
+    [SerializeField] private RawImage shopkeeperImage;
     [SerializeField] private CanvasGroup shopkeeperOverlay;
+
+    private void Update() {
+        if (Input.GetKey(KeyCode.E)) {
+            shopkeeperImage.texture = buttonDown;
+        } else {
+            shopkeeperImage.texture = buttonUp;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision) {
         StartCoroutine(buttonTransitionRoutiune(1));
