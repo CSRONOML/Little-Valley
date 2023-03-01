@@ -1,4 +1,3 @@
-using UnityEditor.U2D.Path;
 using UnityEngine;
 
 public class CharacterController2D : MonoBehaviour {
