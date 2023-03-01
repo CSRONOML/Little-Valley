@@ -26,8 +26,10 @@ public class ShopkeeperTrigger : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.E)) {
             if (shopOverlay.alpha == 0) {
                 StartCoroutine(TransitionRoutine(shopOverlay, 1));
+                IsShopping = true;
             } else if (shopOverlay.alpha == 1) {
                 StartCoroutine(TransitionRoutine(shopOverlay, 0));
+                IsShopping = false;
             }
         }
     }
