@@ -56,8 +56,9 @@ public class ShopkeeperTrigger : MonoBehaviour {
             canvasGroup.alpha = time;
             yield return null;
         }
-
+        
         canvasGroup.alpha = target;
+        canvasGroup.blocksRaycasts = target == 1;
     }
 
 }
